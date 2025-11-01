@@ -1,5 +1,8 @@
 # Jumbled Frames Video Reconstructor
 
+VERSION WITH NO UI BUT FASTER IS AVAILABLE IN SEPARATE REPO
+https://github.com/ISHANTARE/jumbled_frames_video_reconstruction
+
 A web application that reconstructs jumbled video frames into their correct sequential order using computer vision algorithms.
 
 ## Features
