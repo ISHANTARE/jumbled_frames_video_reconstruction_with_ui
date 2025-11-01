@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumbled Frames Reconstructor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Jumbled Frames Video Reconstructor</h1>
+
+        <div class="upload-area" id="uploadArea">
+            <p>Drag & drop a video file here or click to browse</p>
+            <input type="file" id="videoInput" accept="video/*" style="display: none;">
+            <button class="btn" onclick="document.getElementById('videoInput').click()">Browse Files</button>
+        </div>
+
+        <div id="uploadPreview" style="display: none;">
+            <h3>Uploaded Video Preview:</h3>
+            <video id="videoPreview" class="video-preview" controls></video>
+            <button class="btn" id="reconstructBtn" onclick="reconstructVideo()">Reconstruct Video</button>
+        </div>
+
+        <div class="progress" id="progressBar">
+            <div class="progress-bar" id="progressFill"></div>
+        </div>
+
+        <div id="result" class="result">
+            <h3>Reconstruction Result:</h3>
+            <div id="resultInfo"></div>
+            <div id="outputPreview"></div>
+            <button class="btn" id="downloadBtn" onclick="downloadVideo()">Download Reconstructed Video</button>
+        </div>
+
+        <div id="errorMessage" class="error" style="display: none;"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

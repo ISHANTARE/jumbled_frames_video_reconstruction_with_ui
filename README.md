@@ -1,32 +1,25 @@
-# Jumbled Frames Reconstruction
+# Jumbled Frames Video Reconstructor
 
-## Overview
-This project reconstructs jumbled video frames into their correct sequential order using frame similarity analysis and optimization algorithms.
+A web application that reconstructs jumbled video frames into their correct sequential order using computer vision algorithms.
 
-## Algorithm Explanation
+## Features
 
-### Approach
-The solution uses a multi-step process:
+- **Video Upload**: Drag & drop or browse to upload video files
+- **Real-time Preview**: See uploaded and reconstructed videos
+- **Frame Analysis**: Automatic detection and sequencing of jumbled frames
+- **Progress Tracking**: Visual progress indicator during processing
+- **Download Results**: Download the reconstructed video
+- **Execution Metrics**: See processing time and frame count
 
-1. **Frame Extraction**: Extract all frames from the jumbled video
-2. **Similarity Analysis**: Compute pairwise similarity between all frames using:
-   - Structural Similarity Index (SSIM)
-   - Correlation coefficients
-   - Euclidean distance metrics
-3. **Sequence Reconstruction**: Use greedy optimization to find the most probable frame sequence
-4. **Video Generation**: Create output video from reconstructed sequence
+## 🛠Installation
 
-### Key Techniques
-- **Similarity Metrics**: Multiple metrics for robust comparison
-- **Greedy Optimization**: Efficient sequence reconstruction
-- **Frame Preprocessing**: Normalization and resizing for performance
-
-### Design Considerations
-- **Accuracy**: Uses SSIM for high-quality similarity measurement
-- **Performance**: Optimized with matrix operations and efficient algorithms
-- **Robustness**: Multiple similarity metrics for different video types
-
-## Installation
-
-```bash
-pip install -r requirements.txt
+1. **Clone or download** the project files
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+3. **run the app
+    ```bash
+    python server.py
+   ```
